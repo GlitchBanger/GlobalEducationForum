@@ -199,3 +199,4 @@ keynoteSpeaker.onclick = () => {
     keynoteSpeaker.parentElement.classList.add('selected');
     selectedPanelist = keynoteSpeaker;
 };
+
