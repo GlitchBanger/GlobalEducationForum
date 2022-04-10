@@ -112,6 +112,7 @@ let panelistImg = document.getElementById('panelist-img');
 
 let selectedButton = entrepreneurship;
 let currentObject = entrepreneur;
+let selectedPanelist = keynoteSpeaker;
 
 function changeDetails(object) {
     title.innerHTML = object.title;
@@ -125,6 +126,10 @@ function changeDetails(object) {
     keynoteSpeaker.src = object.keynoteimg;
     panelistName.innerHTML = object.keynote;
     panelistImg.src = object.keynoteimg;
+    currentObject = object;
+    selectedPanelist.parentElement.classList.remove('selected');
+    keynoteSpeaker.parentElement.classList.add('selected');
+    selectedPanelist = keynoteSpeaker;
 }
 
 entrepreneurship.onclick = () => {
@@ -154,3 +159,43 @@ digital.onclick = () => {
     selectedButton = digital;
     changeDetails(digitalisation);
 }
+
+panelist1.onclick = () => {
+    panelistImg.src = currentObject.panelist1.img;
+    panelistName.innerHTML = currentObject.panelist1.name;
+    selectedPanelist.parentElement.classList.remove('selected');
+    panelist1.parentElement.classList.add('selected');
+    selectedPanelist = panelist1;
+};
+
+panelist2.onclick = () => {
+    panelistImg.src = currentObject.panelist2.img;
+    panelistName.innerHTML = currentObject.panelist2.name;
+    selectedPanelist.parentElement.classList.remove('selected');
+    panelist2.parentElement.classList.add('selected');
+    selectedPanelist = panelist2;
+};
+
+panelist3.onclick = () => {
+    panelistImg.src = currentObject.panelist3.img;
+    panelistName.innerHTML = currentObject.panelist3.name;
+    selectedPanelist.parentElement.classList.remove('selected');
+    panelist3.parentElement.classList.add('selected');
+    selectedPanelist = panelist3;
+};
+
+panelist4.onclick = () => {
+    panelistImg.src = currentObject.panelist4.img;
+    panelistName.innerHTML = currentObject.panelist4.name;
+    selectedPanelist.parentElement.classList.remove('selected');
+    panelist4.parentElement.classList.add('selected');
+    selectedPanelist = panelist4;
+};
+
+keynoteSpeaker.onclick = () => {
+    panelistImg.src = currentObject.keynoteimg;
+    panelistName.innerHTML = currentObject.keynote;
+    selectedPanelist.parentElement.classList.remove('selected');
+    keynoteSpeaker.parentElement.classList.add('selected');
+    selectedPanelist = keynoteSpeaker;
+};
