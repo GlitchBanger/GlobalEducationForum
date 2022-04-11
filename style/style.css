@@ -401,4 +401,20 @@ ul{
         height: 100px !important;
         font-size: 28px;
     }
+
+    .schedule{
+        margin-top: 20px;
+    }
+
+    .schedule h1{
+        font-size: large;
+    }
+
+    .schedule table{
+        width: 95%;
+    }
+
+    td{
+        font-size: 15px;
+    }
 }
