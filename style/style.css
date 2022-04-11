@@ -275,9 +275,6 @@ ul{
 }
 
 @media screen and (max-width: 840px) {
-    *{
-        border: 1px solid red;
-    }
 
     main{
         display: flex;
@@ -360,7 +357,7 @@ ul{
     }
 
     article video {
-        width: 400px;
+        width: 300px;
         height: auto;
     }
 
