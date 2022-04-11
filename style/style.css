@@ -275,6 +275,10 @@ ul{
 }
 
 @media screen and (max-width: 840px) {
+    *{
+        border: 1px solid red;
+    }
+
     header {
         border-radius: 20px;
         margin: 20px;
@@ -306,10 +310,10 @@ ul{
     }
 
     .description {
-        padding: 20px;
         display: flex;
         flex-direction: column;
         align-items: center;
+        width: 100%;
     }
 
     .description h3 {
@@ -325,6 +329,7 @@ ul{
     .textnpic, .textnpicdark {
         flex-direction: column-reverse;
         align-items: center;
+        padding: 20px;
     }
 
     .textnpic img, .textnpicdark img{
