@@ -1,6 +1,11 @@
+@font-face {
+    font-family: Monserrat;
+    src: url(../fonts/Monserrat/Montserrat-VariableFont_wght.ttf);
+}
+
 html,body {
     font-size: 12px;
-    font-family:Verdana, Helvetica, sans-serif;
+    font-family:Monserrat, Verdana, Helvetica, sans-serif;
 }
 
 header{
@@ -238,8 +243,8 @@ ul{
 }
 
 .flashcards div img {
-    width: 100px;
-    height: 100px;
+    width: 120px;
+    height: 120px;
     border-radius: 50%;
     border: 2px solid #2c2b72;
 }
@@ -398,8 +403,12 @@ p{
     }
 
     .flashcards div img{
-        width: 50px;
-        height: 50px;
+        width: 80px;
+        height: 80px;
+    }
+
+    .flashcards div h3{
+        font-size: 25px;
     }
 
     .selected {
