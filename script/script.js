@@ -19,7 +19,9 @@ let entrepreneur = {
         name: 'Johnny Hardboiled',
         img: '../images/people14.webp'
     },
-    keynoteimg: '../images/keynote1.webp'
+    keynoteimg: '../images/keynote1.webp',
+    moderator: 'John Snow',
+    moderatorImg: '../images/people21.webp'
 };
 
 let wellbeing = {
@@ -43,7 +45,9 @@ let wellbeing = {
         name: 'Egg Boiled',
         img: '../images/people24.jpeg'
     },
-    keynoteimg: '../images/keynote2.jpg'
+    keynoteimg: '../images/keynote2.jpg',
+    moderator: 'John Doe',
+    moderatorImg: '../images/person11.webp'
 };
 
 let social = {
@@ -67,7 +71,9 @@ let social = {
         name: 'Egg Boiled',
         img: '../images/people24.jpeg'
     },
-    keynoteimg: '../images/keynote3.webp'
+    keynoteimg: '../images/keynote3.webp',
+    moderator: 'Johnny Hardboiled',
+    moderatorImg: '../images/people14.webp'
 };
 
 let digitalisation = {
@@ -91,11 +97,12 @@ let digitalisation = {
         name: 'Johnny Hardboiled',
         img: '../images/people14.webp'
     },
-    keynoteimg: '../images/keynote4.webp'
+    keynoteimg: '../images/keynote4.webp',
+    moderator: 'Egg Boiled',
+    moderatorImg: '../images/people24.jpeg'
 };
 
 let title = document.getElementById('title');
-let timings = document.getElementById('timings');
 let keynote = document.getElementById('keynote');
 let description = document.getElementById('event-description'); 
 let entrepreneurship = document.getElementById('entrepreneurship');
@@ -109,14 +116,15 @@ let panelist4 = document.getElementById('panelist4')
 let keynoteSpeaker = document.getElementById('keynote-person');
 let panelistName = document.getElementById('panelist-name');
 let panelistImg = document.getElementById('panelist-img');
+let mediator = document.getElementById('mediator');
+let mediatorImg = document.getElementById('mediator-img');
 
 let selectedButton = entrepreneurship;
 let currentObject = entrepreneur;
-let selectedPanelist = keynoteSpeaker;
+let selectedPanelist = panelist1;
 
 function changeDetails(object) {
     title.innerHTML = object.title;
-    timings.innerHTML = object.timings;
     keynote.innerHTML = object.keynote;
     description.innerHTML = object.description;
     panelist1.src = object.panelist1.img;
@@ -124,12 +132,14 @@ function changeDetails(object) {
     panelist3.src = object.panelist3.img;
     panelist4.src = object.panelist4.img;
     keynoteSpeaker.src = object.keynoteimg;
-    panelistName.innerHTML = object.keynote;
-    panelistImg.src = object.keynoteimg;
+    panelistName.innerHTML = object.panelist1.name;
+    panelistImg.src = object.panelist1.img;
+    mediator.innerHTML = object.moderator;
+    mediatorImg.src = object.moderatorImg;
     currentObject = object;
     selectedPanelist.parentElement.classList.remove('selected');
-    keynoteSpeaker.parentElement.classList.add('selected');
-    selectedPanelist = keynoteSpeaker;
+    panelist1.parentElement.classList.add('selected');
+    selectedPanelist = panelist1;
 }
 
 entrepreneurship.onclick = () => {
@@ -192,11 +202,4 @@ panelist4.onclick = () => {
     selectedPanelist = panelist4;
 };
 
-keynoteSpeaker.onclick = () => {
-    panelistImg.src = currentObject.keynoteimg;
-    panelistName.innerHTML = currentObject.keynote;
-    selectedPanelist.parentElement.classList.remove('selected');
-    keynoteSpeaker.parentElement.classList.add('selected');
-    selectedPanelist = keynoteSpeaker;
-};
 
