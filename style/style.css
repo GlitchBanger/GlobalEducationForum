@@ -91,14 +91,13 @@ section{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
 }
 
 .textnpic img {
     width: 350px;
     height: 350px;
     border-radius: 50%;
-    border: 5px solid #2c2b72;
     margin: 20px;
 }
 
@@ -127,7 +126,6 @@ b{
     width: 350px;
     height: 350px;
     border-radius: 50%;
-    border: 5px solid #ff5f00;
     margin: 20px;
 }
 
@@ -140,7 +138,7 @@ b{
 }
 
 .button{
-    font-size: 2rem;
+    font-size: 12px;
     text-decoration: none;
     padding: 10px 20px 10px 20px;
     border: 2px solid white;
@@ -290,6 +288,11 @@ h3{
 
 h6{
     font-size: 28px;
+}
+
+video{
+    width: 90%;
+    height: auto;
 }
 
 @media screen and (max-width: 840px) {
