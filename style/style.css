@@ -163,6 +163,7 @@ b{
 
 table{
     width: 80vw;
+    margin: 10px auto 20px auto;
 }
 
 thead, .tablehead{
@@ -291,7 +292,7 @@ h6{
 }
 
 video{
-    width: 90%;
+    width: 75%;
     height: auto;
 }
 
@@ -341,7 +342,6 @@ video{
     }
 
     .description h3 {
-        font-size: 18px;
         width: 80%;
         margin: 10px;
     }
@@ -450,5 +450,27 @@ video{
 
     td{
         font-size: 15px;
+    }
+
+    h3{
+        font-size: 33px;
+    }
+
+    .gef-parent{
+        align-items: right;
+    }
+
+    .gef{
+        width: 90% !important;
+        height: auto;
+    }
+
+    .future{
+        width: 400px !important;
+    }
+
+    .world{
+        width: 300px !important;
+        height: 300px !important;
     }
 }
