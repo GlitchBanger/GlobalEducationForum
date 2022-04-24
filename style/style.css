@@ -7,6 +7,7 @@ html,body {
     font-size: 12px;
     font-family:Monserrat, Verdana, Helvetica, sans-serif;
     margin: 0;
+    color: #2c2b72;
 }
 
 header{
@@ -128,6 +129,10 @@ b{
 
 .textnpicdark b{
     color: #ff5f00;
+}
+
+.textnpicdark p{
+    color: white !important;
 }
 
 .read-more{
@@ -279,6 +284,7 @@ ul{
 p{
     text-align: left;
     font-size: 16px;
+    color: #2c2b72;
 }
 
 h3{
@@ -314,9 +320,10 @@ video{
         flex-direction: column;
     }
 
-    header section img{
+    .logo{
         width: 100px;
-        height: 40px;
+        height: auto;
+        left: 10px !important;
     }
 
     header section p{
@@ -455,12 +462,19 @@ video{
     }
 
     .gef-parent{
-        align-items: right;
+        align-items: right !important;
+        background-position: 70% 50% !important;
     }
 
     .gef{
-        width: 90% !important;
+        width: 300px !important;
         height: auto;
+        position: relative !important;
+        top: -80px;
+    }
+
+    .gef h3{
+        font-size: 22px;
     }
 
     .future{
