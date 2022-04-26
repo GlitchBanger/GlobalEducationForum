@@ -175,13 +175,22 @@ thead, .tablehead{
 }
 
 td{
-    text-align: center;
+    text-align: left;
     border:1px solid #2c2b72;
 }
 
 ul{
     list-style: none;
     padding: 0;
+}
+
+#pannelist-details li{
+    color: #ff5f00;
+    font-weight: 900;
+}
+
+li{
+    text-align: left;
 }
 
 .buttons{
@@ -292,7 +301,7 @@ h3{
 }
 
 h6{
-    font-size: 28px;
+    font-size: 18px;
 }
 
 video{
