@@ -57,7 +57,7 @@ let wellbeing = {
 };
 
 let social = {
-    title: 'Social Commitment',
+    title: 'Social Impact',
     timings: '12:15pm',
     keynote: 'Dr. Subramanya',
     description: 'Higher educational teaching can play a central role in social change and increased social awareness among the students. HEIs can embark on innovations in teaching and learning to understand the social impact and support social engagement. Through this institutions can prepare leaders to respond to the real-life challenges and solving the socio-economic problem solving.',
